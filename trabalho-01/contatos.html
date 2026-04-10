@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>contatos</title>
+</head>
+<body>
+ <nav>
+    
+</nav>
+  <h1>Formulário de Contato</h1>
+
+  <form action="#" method="post">
+
+    <!-- Nome completo -->
+    <label for="nome">Nome completo:</label><br>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <!-- Telefone -->
+    <label for="telefone">Telefone:</label><br>
+    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required><br><br>
+
+    <!-- E-mail -->
+    <label for="email">E-mail:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Pessoa Física ou Jurídica -->
+    <label>Tipo de pessoa:</label><br>
+    <input type="radio" id="pf" name="tipo_pessoa" value="fisica" required>
+    <label for="pf">Pessoa Física</label>
+
+    <input type="radio" id="pj" name="tipo_pessoa" value="juridica">
+    <label for="pj">Pessoa Jurídica</label><br><br>
+
+    <!-- Melhor horário de contato -->
+    <label for="horario">Melhor horário para contato:</label><br>
+    <select id="horario" name="horario">
+      <option value="manha">Manhã</option>
+      <option value="tarde">Tarde</option>
+      <option value="noite">Noite</option>
+    </select><br><br>
+
+    <!-- Tipo de serviço -->
+    <label>Tipo de serviço desejado:</label><br>
+    <input type="checkbox" name="servico" value="site"> Criação de Site<br>
+    <input type="checkbox" name="servico" value="manutencao"> Manutenção<br>
+    <input type="checkbox" name="servico" value="design"> Design<br>
+    <input type="checkbox" name="servico" value="marketing"> Marketing Digital<br><br>
+
+    <!-- Descrição -->
+    <label for="descricao">Breve descrição do que deseja contratar:</label><br>
+    <textarea id="descricao" name="descricao" rows="5" cols="40"></textarea><br><br>
+
+    <!-- Botões -->
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+
+  </form>
+
+</body>
+</html>
