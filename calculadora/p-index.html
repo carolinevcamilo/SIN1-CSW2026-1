@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="caixa">
+        <label>ANO DE NASCIMENTO:</label>
+       <input type="number" id="ano">
+       <button onclick="calcular()">CALCULADORA</button>
+       <div id="resultado"> você tem...</div>
+       
+   <script>
+    function Calculadora()
+    {
+        let anoNascimento = document.getElementById(anoNascimento).value
+          let idade=0
+          let anoatual=new date().getfullYear();
+
+         alert(new date())
+
+          idade = anoAtual - anoNascimento
+
+       if (anoNascimento==0){
+         alert("digite um ano valido")
+          return
+        }
+        document.getElementById("resultador").innerHTML="Sua idade é:" + idade
+
+   
+    }
+   </script>
+</body>
+</html>
